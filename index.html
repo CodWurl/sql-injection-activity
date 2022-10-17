@@ -7,6 +7,11 @@
 <body>
 
 <form action="/login" method="post">
+
+  <div id="login-error-msg-holder">
+    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+  </div>
+
   <div class="container">
     <label><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required>

@@ -31,13 +31,11 @@ app.post('/login', function (req, res) {
 
     db.get(query, function (err, row) {
 
-		if (err) {
-			console.log('ERROR', err);
-			res.redirect("/index.html#error");
-		} else if (!row) {
-			res.redirect("/index.html#unauthorized");
+	    if (username === "user" && password === "password") {
+			alert("You have successfully logged in.");
+			location.reload();
 		} else {
-			res.send('Hello <b>' + row.title + '!</b><br /> This file contains all your secret data: <br /><br /> SECRETS <br /><br /> MORE SECRETS <br /><br /> <a href="/index.html">Go back to login</a>');
+			loginErrorMsg.style.opacity = 1;
 		}
 	});
 
