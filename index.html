@@ -22,7 +22,7 @@
     <button type="submit">Login</button>
   </div>
 
-  <script>
+  <script defer src="app.js">
     if(document.location.hash === '#unauthorized') {
         document.write('<div class="unauthorized">Invalid Username or Password</div>');
     } else if(document.location.hash === '#error') {
