@@ -50,8 +50,8 @@ form {
 	padding-top: 16px;
     }
     
-    .unauthorized {
-	background-color: rgb(240, 24, 35);
+    .authorized {
+	background-color: rgb(17, 226, 178);
     }
     
     .error {

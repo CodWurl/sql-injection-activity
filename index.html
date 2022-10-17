@@ -21,9 +21,8 @@
     </div>
   
     <script>
-      if(username === "Admin" && password === "Control") {
-        alert("You have successfully logged in.");
-        location.reload();
+      if(document.location.hash === '#authorized') {
+          document.write('<div class="authorized">Successful Login</div>');
       } else if(document.location.hash === '#error') {
           document.write('<div class="error">An error has occured</div>');
       }
