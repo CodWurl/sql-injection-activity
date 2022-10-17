@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 app.post('/login', function (req, res) {
 	var username = req.body.username;
 	var password = req.body.password;
-	var query = "SELECT title FROM user WHERE username = â€˜â€ + username + â€œâ€™ AND password = â€˜â€ + password + â€œâ€™;
+	var query = "SELECT title FROM user where username = '" + username + "' and password = '" + password + "'";
 
 	console.log("username: " + username);
 	console.log("password: " + password);
