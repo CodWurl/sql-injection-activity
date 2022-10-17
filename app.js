@@ -35,7 +35,7 @@ app.post('/login', function (req, res) {
 			console.log('ERROR', err);
 			res.redirect("/index.html#error");
 		} else if (!row) {
-			res.redirect("/index.html#unauthorized");
+			res.redirect("/index.html#authorized");
 		} else {
 			res.send('Hello <b>' + row.title + '!</b><br /> This file contains all your secret data: <br /><br /> SECRETS <br /><br /> MORE SECRETS <br /><br /> <a href="/index.html">Go back to login</a>');
 		}
